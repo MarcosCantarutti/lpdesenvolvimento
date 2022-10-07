@@ -1,0 +1,138 @@
+ /* blog */
+ .main-title-blog {
+     color: #d07f57;
+     margin: 10rem 0 6.5rem 0;
+     font-size: 3rem;
+     text-align: center;
+     font-weight: bold;
+ }
+
+ .article {
+     display: flex;
+     flex-direction: row;
+     gap: 1rem;
+     flex-wrap: wrap;
+     /* margin: 10rem auto; */
+     align-items: center;
+     justify-content: center;
+ }
+
+ .article-container {
+     padding: 2rem;
+     box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+     border-radius: 5px;
+     cursor: pointer;
+     text-align: center;
+     transition: 0.2s;
+     margin: 0 auto;
+     width: 40rem;
+ }
+
+ .article-container .article-title a {
+     text-decoration: none;
+ }
+
+ .article-container img {
+     max-width: 300px;
+     max-height: 300px;
+     display: block;
+     padding: 20px;
+     margin: 0px auto 40px;
+     box-shadow: rgb(0 0 0 / 9%) 0px 2px 1px, rgb(0 0 0 / 9%) 0px 4px 2px, rgb(0 0 0 / 9%) 0px 8px 4px, rgb(0 0 0 / 9%) 0px 16px 8px, rgb(0 0 0 / 9%) 0px 32px 16px;
+ }
+
+ .article-container:hover {
+     filter: brightness(50%);
+ }
+
+ .article-title {
+     color: #15253e;
+     font-size: 2rem;
+ }
+
+ .main-title:after {
+     top: 8rem;
+ }
+
+ .article-title a,
+ .next-post a,
+ .prev-post a {
+     text-decoration: none;
+ }
+
+ .next-post,
+ .prev-post {
+     padding: 2rem;
+     font-size: 2rem;
+ }
+
+ @media only screen and (max-width: 750px) {
+
+     .article-title {
+         font-size: 1.8rem;
+     }
+ }
+
+ @media only screen and (max-width: 500px) {
+
+     .article-title {
+         font-size: 1.5rem;
+     }
+ }
+
+
+
+ /* blog posts */
+ .back {
+     font-size: 2rem;
+
+ }
+
+ .container.post .back a {
+     text-decoration: none;
+ }
+
+ .container.post {
+     margin-bottom: 5rem;
+     padding: 2rem;
+
+ }
+
+ .back a {
+     text-decoration: none;
+ }
+
+ .container.post img {
+     max-width: 400px;
+     max-height: 400px;
+     display: block;
+     padding: 30px;
+     margin: 0px auto 40px;
+     box-shadow: rgb(0 0 0 / 9%) 0px 2px 1px, rgb(0 0 0 / 9%) 0px 4px 2px, rgb(0 0 0 / 9%) 0px 8px 4px, rgb(0 0 0 / 9%) 0px 16px 8px, rgb(0 0 0 / 9%) 0px 32px 16px;
+ }
+
+ .container.post .main-title {
+     margin-top: 5rem;
+ }
+
+ .container.post .main-title::after {
+     top: 15rem;
+ }
+
+ .post-content {
+     padding: 5px;
+     text-align: left;
+     margin-bottom: 1rem;
+ }
+
+ .post-content p {
+     font-size: 2rem;
+ }
+
+ @media only screen and (max-width: 500px) {
+     .main-title::after {
+         width: 40%;
+         top: 12rem;
+         left: 30%;
+     }
+ }

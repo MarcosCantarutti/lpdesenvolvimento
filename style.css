@@ -1,0 +1,706 @@
+/*
+Theme Name: LP Terapeutas
+Theme URI: lpterapeutas.com
+Author: Marcos Cantarutti
+Author URI: https://marcoscantarutti.com.br
+Description: Site  lpterapeutas criado para atender clientes em busca de qualidade de vida
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  font-family: 'Poppins', sans-serif;
+}
+
+:target {
+  scroll-margin-top: 5rem;
+}
+
+body {
+  background-color: #15253e;
+  overflow-x: hidden;
+}
+
+header,
+.navbar {
+  background-color: #15253e;
+}
+
+#nav-container {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.logo-container {
+  display: block;
+}
+
+#logo {
+  width: 5rem;
+  transform: scale(3.5);
+  position: absolute;
+  left: 80px;
+  top: 18px;
+}
+
+
+
+.navbar-nav {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+  padding: 1rem .8rem;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #FFF;
+}
+
+
+
+.text-container {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 75rem;
+  gap: 2rem;
+  padding-top: 20rem;
+
+}
+
+.text-container blockquote {
+  font-size: 3rem;
+  color: #e6ddd4;
+  text-align: center;
+}
+
+.text-container p {
+  font-size: 2.5rem;
+  text-align: center;
+  margin: 5rem auto 0;
+  color: #e6ddd4;
+}
+
+.btn {
+  background-color: #d07f57 !important;
+  height: 4rem;
+  font-size: 2rem !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+/*   transition: ease-in-out .3s; */
+	transition: all 0.3s;
+}
+
+.btn a {
+  text-decoration: none;
+  color: #000;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+.btn a:hover {
+  text-decoration: none;
+}
+
+.text-container .main-btn {
+  background-color: #d07f57;
+  color: #e6ddd4;
+  text-transform: uppercase;
+  /* width: 20rem; */
+  height: 8rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid transparent;
+  transition: ease all .5s;
+  font-size: 2rem;
+  text-align: center;
+  cursor: pointer;
+  margin: 0 auto;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-container .main-btn a {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.text-container h1 {
+  font-style: normal;
+  color: #e6ddd4;
+  text-align: center;
+  margin: 2rem auto 0;
+}
+
+.text-container .main-btn a {
+  color: #e6ddd4;
+  font-weight: bold;
+}
+
+.text-container .main-btn:hover {
+  transform: scale(1.1);
+  text-decoration: none;
+}
+
+.text-container .main-btn:hover a {
+  text-decoration: none;
+  color: #010101;
+}
+
+
+#about-area {
+  background-color: #FFFFFF;
+  height: auto;
+  padding: 5.5rem 0 5rem 0;
+}
+
+.main-title {
+  color: #d07f57;
+  margin: 2rem 0 6.5rem 0;
+  font-size: 3rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+.main-title::after {
+  content: "";
+  border-top: 2px solid #d07f57;
+  width: 15%;
+  position: absolute;
+  top: 8rem;
+  left: 42.5%;
+}
+
+.about-title {
+  font-size: 2rem;
+  color: #d07f57;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+#about-area .container {
+  margin-bottom: 8rem;
+}
+
+#about-area h1 {
+  margin: 2rem auto;
+  text-align: center;
+  color: #15253e;
+  font-weight: bold;
+  background-color: #15253e;
+  font-size: 5rem;
+  width: 80rem;
+  border-radius: 2rem;
+  text-decoration: none;
+}
+
+#about-area p {
+  color: #15253e;
+  font-size: 1.6rem;
+}
+
+
+#services-area {
+  background-color: #15253e;
+}
+
+.main-title.service {
+  padding-top: 2rem;
+}
+
+.main-title.service::after {
+  top: 100px;
+}
+
+.service-box {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.service-box img {
+  width: 30rem;
+  height: 20rem;
+  padding: 1rem;
+  border-radius: 2rem;
+}
+
+.service-box h4 {
+  font-size: 2.4rem;
+  margin-bottom: 2rem;
+  color: #d07f57;
+  text-decoration: underline;
+}
+
+.service-box p {
+  font-size: 1.6rem;
+  color: #e6ddd4;
+}
+
+/*
+  FAQ
+*/
+
+#questions-area {
+  margin-top: 5rem;
+}
+
+#faq {
+  background-color: #e6ddd4;
+  padding: 3rem;
+  border-radius: 1rem;
+}
+
+dt {
+  font-weight: bold;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+  color: #d07f57;
+  font-size: 2rem;
+}
+
+dt::before {
+  content: "";
+  display: inline-block;
+  width: 2rem;
+  height: 1rem;
+  margin-right: 1rem;
+  background: #15253e;
+}
+
+dd {
+  margin-bottom: 0.5rem;
+  margin-left: 30px;
+  font-size: 1.6rem;
+  color: #15253e;
+}
+
+
+/* Footer */
+
+#contact-area {
+  text-align: center;
+  background-color: #FFFFFF;
+  margin: 2rem auto;
+}
+
+.contact-box {
+  padding-bottom: 50px;
+  margin-bottom: 50px;
+  border-bottom: 1px solid #15253e;
+}
+
+.contact-box i {
+  color: #15253e;
+  border: solid 1px #010101;
+  background-color: #e6ddd4;
+  border-radius: 50%;
+  width: 55px;
+  height: 55px;
+  line-height: 55px;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.contact-box p {
+  font-size: 1.6rem;
+  color: #15253e;
+}
+
+.contact-box a,
+.contact-box span {
+  font-size: 1.6rem;
+  color: #15253e;
+  text-decoration: none;
+  transition: 0.1s;
+}
+
+.contact-box a:hover {
+  text-decoration: none;
+  color: #d07f57;
+}
+
+.contact-tile {
+  font-weight: bold;
+  color: #15253e;
+}
+
+#msg-box p {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #15253e;
+}
+
+#contact-form input[type="text"],
+#contact-form textarea {
+  margin-bottom: 2rem;
+  border-radius: 0;
+  font-size: 2rem;
+  background-color: #e6ddd4;
+}
+
+#contact-form .main-btn {
+  width: 13rem;
+  height: 5rem;
+  font-size: 2rem;
+  transition: 0.3s;
+  background-color: #d07f57;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+#msg-box .img-contact {
+  height: 20rem;
+  border-radius: 50%;
+}
+
+#contact-form .main-btn:hover {
+  color: #000;
+  background-color: #e6ddd4;
+}
+
+/* Copy */
+
+#copy-area {
+  margin-top: 1rem;
+  background-color: #15253e;
+}
+
+#copy-area .container {
+  padding: 1rem 0;
+  text-align: center;
+}
+
+#copy-area .container p {
+  margin-bottom: 0;
+  color: #e6ddd4;
+}
+
+#copy-area .container a {
+  font-weight: bold;
+  color: #e6ddd4;
+  transition: 0.3s;
+}
+
+#copy-area .container a:hover {
+  text-decoration: none;
+  color: #d07f57;
+}
+
+/* LP Enterprise*/
+
+/*About page*/
+
+#about-container {
+  background-color: #e6ddd4;
+  width: 100%;
+  height: 100vh;
+}
+
+.text-container.about {
+  padding: 5rem;
+  margin: 5rem auto 0rem;
+}
+
+#about-container .text-container h1 {
+  color: #d07f57;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+#about-container .text-container p {
+  color: #15253e;
+  font-size: 2rem;
+}
+
+#copy-area {
+  margin: 0 auto;
+}
+
+.whatsapp-btn {
+  position: fixed;
+  width: 5rem;
+  bottom: 0;
+  right: 1rem;
+  margin: 2rem;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.whatsapp-btn:hover {
+  transform: scale(1.2);
+}
+
+#aboutus {
+  padding: 10rem;
+}
+
+
+#aboutus .card .card-img {
+  height: 55rem;
+  filter: brightness(40%);
+  border-radius: 1rem;
+}
+
+#aboutus .card .card-title {
+  font-size: 3rem;
+  color: #d07f57;
+  padding: 5rem;
+  text-align: center;
+}
+
+#aboutus .card .card-text {
+  font-size: 2rem;
+  color: #FFFFFF;
+  text-align: left;
+  padding: 0.5rem;
+}
+
+#container-aboutus .card {
+  margin: 2rem auto;
+}
+
+#container-aboutus .card .card-text {
+  font-size: 1.6rem;
+}
+
+.col-md-10 {
+  margin: 0 auto;
+  padding: 2.5rem;
+}
+
+
+#aboutus .col-md-10 .card-title {
+  font-size: 3rem;
+  color: #d07f57;
+}
+
+#aboutus .col-md-10 .card-text {
+  font-size: 1.6rem;
+  letter-spacing: 0.1rem;
+}
+
+@media only screen and (max-width: 990px) {
+  #logo {
+    width: 4rem;
+    transform: scale(2.5);
+    position: absolute;
+    left: 50px;
+    top: 7px;
+  }
+}
+
+
+@media only screen and (max-width: 500px) {
+
+  .text-container {
+    max-width: 55rem;
+    padding-top: 15rem;
+  }
+
+  .text-container blockquote {
+    font-size: 2.5rem;
+  }
+
+  .text-container p {
+    font-size: 2.5rem;
+
+  }
+
+  #about-area {
+    background-color: #FFFFFF;
+    height: auto;
+    padding: 5rem;
+  }
+
+  #about-area h1 {
+    margin: 0 auto 2rem;
+    text-align: center;
+    padding: 2rem;
+    color: #15253e;
+    background-color: #d07f57;
+    width: 30rem;
+    font-size: 2rem;
+    border-radius: 2rem;
+    text-decoration: underline;
+  }
+
+  .main-title {
+    font-size: 2.5rem;
+  }
+
+  .main-title::after {
+    width: 40%;
+    top: 15rem;
+    left: 30%;
+  }
+
+  #about-area img {
+    margin: 0 auto 3rem;
+  }
+
+  #about-area p {
+    color: #15253e;
+    font-size: 2rem;
+    margin: 2rem auto;
+  }
+
+  .main-title.service {
+    padding-top: 2rem;
+  }
+
+  .main-title.service::after {
+    top: 115px;
+  }
+
+  /*FAQ*/
+
+  .main-title.faq::after {
+    top: 70px;
+  }
+
+  .service-box img {
+    width: 30rem;
+    height: 20rem;
+    padding: 1rem;
+    border-radius: 2rem;
+  }
+
+  .service-box h4 {
+    font-size: 2.5rem;
+    margin-top: 2rem;
+  }
+
+  .service-box p {
+    font-size: 1.8rem;
+    color: #e6ddd4;
+  }
+
+
+  /* Footer */
+
+  #contact-area .main-title::after {
+    width: 40%;
+    top: 10rem;
+    left: 30%;
+  }
+
+
+  #msg-box p {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #15253e;
+    margin: 1rem 0 1rem 0;
+  }
+
+
+  #msg-box .img-contact {
+    height: 15rem;
+    border-radius: 50%;
+    margin: 2rem auto 2rem;
+  }
+
+
+  html {
+    overflow-x: hidden;
+  }
+
+  /* Copy */
+
+  #copy-area {
+    margin-top: 1rem;
+    background-color: #15253e;
+  }
+
+
+  .whatsapp-btn {
+    position: fixed;
+    width: 5rem;
+    bottom: 0;
+    right: 1rem;
+    margin: 1rem;
+    cursor: pointer;
+    transition: .3s;
+  }
+
+  .whatsapp-btn:hover {
+    transform: scale(1.1);
+  }
+
+
+  .logo {
+    width: 7.5rem;
+    height: 7.5rem;
+    transform: scale(3);
+  }
+
+  #container-aboutus .img-fluid {
+    width: 30rem;
+  }
+  
+  .img-fluid {
+    margin-top: 8rem;
+  }
+
+  #container-aboutus .col-md-6 {
+    margin: 0 auto;
+    width: 30rem;
+  }
+
+  #aboutus .card .card-title {
+    font-size: 2rem;
+    color: #d07f57;
+    padding: 3rem;
+    text-align: center;
+  }
+
+  #container-aboutus .main-title::after {
+    width: 40%;
+    top: 10rem;
+    left: 30%;
+  }
+
+  #aboutus .card .card-text {
+    font-size: 1.6rem;
+    color: #FFFFFF;
+    text-align: left;
+    padding: 0.5rem;
+  }
+
+  #container-aboutus .card .card-text {
+    font-size: 1.5rem;
+  }
+
+  .col-md-10 {
+    margin: 0 auto;
+    padding-right: 1rem;
+  }
+
+
+  #aboutus .col-md-10 .card-title {
+    font-size: 2rem;
+    color: #d07f57;
+  }
+
+  #aboutus .col-md-10 .card-text {
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
+  }
+
+
+
+}
